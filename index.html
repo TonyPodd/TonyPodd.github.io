@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+<title>Paper</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<link rel="stylesheet" type="" href="style.css">
+
+<!-- <a href="index.html"> -->
+
+<a href="index.html">
+	<img src="tool.png" alt="" id="logo">
+</a>
+<!-- </a> -->
+
+<div id=header> ЧЕСТНЫЙ ОБЗОР ТУАЛЕТНОЙ БУМАГИ  </div>
+
+
+<div class="info">
+
+	<div class="txt">
+		Есть бесконечный список вещей, которые делают абсолютно все люди вне зависимости от возраста, пола, социального статуса и достатка. Устройство человеческого организма стандартизировано, и, согласно заложенной в него логике обмена веществ, все мы употребляем пищу, усваиваем ее полезные элементы, а от бесполезных избавляемся. По мере развития социума между этими процессами возникли дополнительные элементы: дыры в полу, затем унитазы, кувшины, биде и туалетная бумага. Последняя представлена в магазинах&nbsp;невероятно разнообразно, и ее покупка обычно происходит автоматически: увидел, вспомнил, что дома закончилась, купил. Но когда мы действительно совершали осмысленную покупку той или иной марки туалетной бумаги?
+	</div>
+
+
+</div>
+
+<div class="GRP1">
+	<div class="info" id="n2s">
+	принимаю что автор сайта - молодец, <br> и не отвечает за свои слова
+</div>
+
+
+<div id="gal">
+	<img src="pngwing.com.png" alt="" id="img">
+</div>
+</div>
+
+
+<!-- <h1> Каталог обезьян</h1> -->
+
+
+<div class="GRP2">
+
+<a href=n1.html class="ass"> 
+<div id = 'dv1'>
+ДА	
+</div>
+</a>
+
+
+	<div class="box">
+	<button type="button" class="btn btn-success touchMeNot" id="qwer1" href="r.mtdv.me/ZcxrPRzaOT">
+			НЕТ
+	</button>
+	</div>
+</div>
+
+<a href=test.html class="ass" id = "btntst"> 
+<div id = 'dv1'>
+ТЕСТ
+</div>
+</a>
+	
+
+
+</body>
+</html>
+
+
+<script>
+	var myFuncCalls = 0;
+		$('#qwer1').on('mouseenter',function(e){
+			var maxX = $(window).width() - $(this).width();
+			var maxY = $(window).height() - $(this).height();
+			$(this).css({
+				'left':getRandomInt(0, maxX),
+				'top':getRandomInt(-100, maxY)
+			});
+
+			myFuncCalls++;
+
+		});
+		function getRandomInt(min, max) {
+			return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+</script>

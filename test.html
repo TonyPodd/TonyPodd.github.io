@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+	<head>
+		<title>Paper</title>
+		<link rel="stylesheet" type="" href="style.css">
+		<link rel="stylesheet" type="" href="test.css">
+	</head>
+
+<a href="index.html">
+	<img src="tool.png" alt="" id="logo">
+</a>
+<!-- </a> -->
+
+<div id=header> ЧЕСТНЫЙ ОБЗОР ТУАЛЕТНОЙ БУМАГИ (ТЕСТ)  </div>
+
+
+	<body style="text-align: center">
+
+
+		<div id="n1" class="vopros">
+			<p>Каким ЯП ты пользуешься?</p>
+			<button class="normbtn" onclick="count-=1; document.getElementById('n1').style.display = 'none'; document.getElementById('n2').style.display = 'contents';">Python</button>
+			<button class="normbtn" onclick="count+=1; document.getElementById('n1').style.display = 'none'; document.getElementById('n2').style.display = 'contents';">C# / C++</button>
+			<button class="normbtn" onclick="count+=3;document.getElementById('n1').style.display = 'none'; document.getElementById('n2').style.display = 'contents';">Scrath</button>
+		</div>
+		<div id="n2" class="vopros">
+			<p>Сколько задач дня ты сдал?</p>
+			<button class="normbtn" onclick="count+=1; document.getElementById('n2').style.display = 'none'; document.getElementById('n3').style.display = 'contents';">>10</button>
+			<button class="normbtn" onclick="count-=3; document.getElementById('n2').style.display = 'none'; document.getElementById('n3').style.display = 'contents';"><10</button>
+			<button class="normbtn" onclick="count+=2; document.getElementById('n2').style.display = 'none'; document.getElementById('n3').style.display = 'contents';"><0</button>
+		</div>
+		<div id="n3" class="vopros">
+			<p>Вы Даниил Ченченко?</p>
+			<button class="normbtn" onclick="count+=3; document.getElementById('n3').style.display = 'none'; document.getElementById('n4').style.display = 'contents';">Да!</button>
+			<button class="normbtn" onclick="count-=3; document.getElementById('n3').style.display = 'none'; document.getElementById('n4').style.display = 'contents';">Нет(</button>
+			<button class="normbtn" onclick="count+=2; document.getElementById('n3').style.display = 'none'; document.getElementById('n4').style.display = 'contents';">С обезьянами не говорю</button>
+		</div>
+		<div id="n4" class="vopros">
+			<p>Когда началась Вторая мировая война?</p>
+			<button class="normbtn" onclick="count+=0; document.getElementById('n4').style.display = 'none'; document.getElementById('n5').style.display = 'contents';">1941</button>
+
+			<button class="normbtn" onclick="count-=5; document.getElementById('n4').style.display = 'none'; document.getElementById('n5').style.display = 'contents';">1 сентября 1939 г.</button>
+
+			<button class="normbtn" onclick="count+=3; document.getElementById('n4').style.display = 'none'; document.getElementById('n5').style.display = 'contents';">рассказать про Волынскую резню!</button>
+
+			<button class="normbtn" onclick="count+=2; document.getElementById('n4').style.display = 'none'; document.getElementById('n5').style.display = 'contents';">Что?..</button>
+		</div>
+		<div id="n5" class="vopros">
+			<p>Когда волк волк, а другой волк не волк, то волк не волку волк, а не волк не волк.</p>
+			<button class="normbtn" onclick="count+3;document.getElementById('n5').style.display = 'none'; document.getElementById('rez').style.display = 'contents'; q()">Да...</button>
+			<button class="normbtn" onclick="count-=3; document.getElementById('n5').style.display = 'none'; document.getElementById('rez').style.display = 'contents'; q()">Лев / Прав.
+			</button>
+			<button class="normbtn" onclick="count-=2;document.getElementById('n5').style.display = 'none'; document.getElementById('rez').style.display = 'contents'; q()">Тигр</button>
+		</div>
+
+		<div id="rez" class="rez">
+			<h1>Вы: </h1>
+			<h1><div id="vi"></div></h1>
+		</div>
+
+	</body>
+
+	<script>
+		let count = 0;
+		let otv = '';
+
+		function q(){
+
+			console.log(count);
+			
+			if (count < 0){
+				otv = 'Душ. Даже на туалетную бумагу не тянете'
+			}
+			if (count > 0 && count <= 6) {
+				otv = 'Наждачная бумага (слабенько)';
+			}
+			if (count <= 10 && count > 6) {
+				otv = 'Туалетная бумага из Набережных Челнов';
+			}
+			if (count < 14 && count > 10) {
+				otv = 'Туалетная бумага Kleenex. С щеночками';
+			}
+			if (count == 14) {
+				otv = 'Dollar Toilet Paper';
+			}
+
+
+			document.getElementById("vi").innerHTML = otv;
+		}
+	</script>
+</html>
